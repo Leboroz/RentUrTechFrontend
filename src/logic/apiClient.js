@@ -2,7 +2,7 @@ import axios from 'axios';
 import { loadState } from './localStorage';
 
 const apiClient = axios.create({
-  baseURL: 'https://renturtech.herokuapp.com',
+  baseURL: 'https://lazy-tuna-pocket.cyclic.app/',
 });
 
 apiClient.interceptors.request.use((config) => {
