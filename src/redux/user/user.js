@@ -26,7 +26,7 @@ export const login = (payload) => ({
 });
 
 export const authenticateUser = (user) => async (dispatch) => {
-  await axios.post('https://lazy-tuna-pocket.cyclic.app/', {
+  await axios.post('https://rent-ur-tech.onrender.com', {
     username: user.username,
     password: user.password,
   })
@@ -46,7 +46,7 @@ export const authenticateUser = (user) => async (dispatch) => {
 };
 
 export const postUserToAPI = (user) => async (dispatch) => {
-  await axios.post('https://lazy-tuna-pocket.cyclic.app/',
+  await axios.post('https://rent-ur-tech.onrender.com',
     {
       user,
     })

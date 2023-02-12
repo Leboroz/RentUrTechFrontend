@@ -2,7 +2,7 @@ import axios from 'axios';
 import { loadState } from './localStorage';
 
 const apiClient = axios.create({
-  baseURL: 'https://lazy-tuna-pocket.cyclic.app/',
+  baseURL: 'https://rent-ur-tech.onrender.com',
 });
 
 apiClient.interceptors.request.use((config) => {
