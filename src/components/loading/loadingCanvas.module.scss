@@ -17,3 +17,13 @@
   z-index: 51;
   color: black;
 }
+
+.text {
+  position: absolute;
+  width: 100%;
+  max-width: 320px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-20%);
+  z-index: 51;
+}
