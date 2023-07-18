@@ -5,12 +5,12 @@ import { initEquipment } from './equipment';
 import { logOut } from '../user/user';
 
 const initState = () => async (dispatch) => {
-  const response = await axios.get('https://renturtech.herokuapp.com/equipments');
+  const response = await axios.get('https://rent-ur-tech.onrender.com/equipments');
   dispatch(initEquipment(response.data.data));
 };
 
 const postEquipmentToAPI = (formData, config, callback) => async (dispatch) => {
-  axios.post('https://renturtech.herokuapp.com/equipments', formData, config)
+  axios.post('https://rent-ur-tech.onrender.com/equipments', formData, config)
     .then((res) => {
       if (res.status === 201) {
         toastify('Equipment Create successfully', 'success');

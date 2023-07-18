@@ -99,6 +99,7 @@ const LoadingCanvas = () => {
   return (
     <>
       <img className={style.message} src={logo} alt="logo" />
+      <h1 className={style.text}>Loading...</h1>
       <canvas
         className={style.canvas}
         onMouseDown={handleMouseDown}
